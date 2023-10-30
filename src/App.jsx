@@ -4,6 +4,8 @@ import Home from "./pages/home";
 import { Route, Routes } from "react-router-dom";
 import OTP from "./pages/otp";
 import MobileNum from "./pages/otp";
+import Bio from "./pages/bio";
+import Menu from "./pages/menu";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mobilenum" element={<MobileNum />} />
+          <Route path="/bio" element={<Bio />} />
+          <Route path="/menu" element={<Menu/>} />
 
         </Routes>
       </div>

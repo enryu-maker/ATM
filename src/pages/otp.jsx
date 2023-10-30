@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -6,8 +7,13 @@ import { useState } from 'react'
 const MobileNum = ()=>{
 
   const [open,setOpen]=useState(false)
+  const navigate = useNavigate()
 
+  const handleVerify = () => {
+    alert ("Mobile number verfied succesful");
+    navigate("/menu")
 
+  }
   const OTP = () => {
 
 
@@ -46,7 +52,7 @@ const MobileNum = ()=>{
   
               <div class="flex flex-col space-y-5">
                 <div>
-                  <button onClick={() => setOpen(false)} class="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-5 bg-red-500 hover:bg-red-700 border-none text-white text-sm shadow-sm">
+                  <button onClick={handleVerify} class="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-5 bg-red-500 hover:bg-red-700 border-none text-white text-sm shadow-sm">
                     Verify Mobile Number
                   </button>
                 </div>
@@ -71,7 +77,7 @@ const MobileNum = ()=>{
       <label class="block text-gray-700 text-lg font-bold mb-4">
         Mobile Number
       </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Enter Mobile Number"/>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" maxLength={10} placeholder="Enter Mobile Number"/>
     </div>
    
     <div class="flex items-center justify-between">

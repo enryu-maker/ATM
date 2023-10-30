@@ -10,7 +10,7 @@ const Home = () => {
         " > 
         
         <Link to="/mobilenum"><Button img={'https://cdn-icons-png.flaticon.com/128/159/159478.png'} title='OTP'/></Link>
-        <Button img={'https://cdn-icons-png.flaticon.com/128/3132/3132092.png'} title='Biomatric'/>
+       <Link to="/bio"> <Button img={'https://cdn-icons-png.flaticon.com/128/3132/3132092.png'} title='Biomatric'/></Link>
         {/* <img src={require('../assets/icon/otp.png')}/> */}
         </div>
         
