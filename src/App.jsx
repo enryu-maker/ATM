@@ -6,6 +6,7 @@ import OTP from "./pages/otp";
 import MobileNum from "./pages/otp";
 import Bio from "./pages/bio";
 import Menu from "./pages/menu";
+import Accounts from "./pages/accounts";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/mobilenum" element={<MobileNum />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/menu" element={<Menu/>} />
+          <Route path="/accounts" element={<Accounts/>} />
+
 
         </Routes>
       </div>
