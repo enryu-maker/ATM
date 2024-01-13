@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const MobileNum = ()=>{
+const Verify = ()=>{
 
   const [open,setOpen]=useState(false)
   const navigate = useNavigate()
 
   const handleVerify = () => {
     alert ("Mobile number verfied succesful");
-    navigate("/accounts")
+    navigate("/thank")
 
   }
   const OTP = () => {
@@ -98,4 +98,4 @@ const MobileNum = ()=>{
         </>
     )
 }
-export default MobileNum;
+export default Verify;

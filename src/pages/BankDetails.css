@@ -1,0 +1,28 @@
+body{
+    background-image: url('../assets//icon//bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+    
+}
+.inputes{
+    margin: 10px;
+}
+.nextbtn{
+    float: right;
+    color: white;
+    padding: 8px 25px;
+    font-weight: bold;
+    transition-duration: .3s;
+    cursor: pointer;
+    display: inline-block;
+     box-shadow: 4px 6px 10px rgba(0,
+    0, 0,.4); 
+    border-radius: 7px;
+    background-color:#ffc94b ;
+    
+}
