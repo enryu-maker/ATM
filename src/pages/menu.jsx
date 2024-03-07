@@ -16,7 +16,7 @@ const Menu = () => {
         <div className='flex flex-col gap-10'> 
         
         {/* <Button  img={withdraw} title='WITHDRAW'/> */}
-        <Link to='/details'><Button exit img={withdraw} title='WITHDRAW'/></Link>
+        <Link to='/Verify'><Button exit img={withdraw} title='WITHDRAW'/></Link>
         
         <Link to='/'><Button exit img={''} icon={<ExitToAppIcon className='text-red-700'/>} title='EXIT'/></Link>
         </div>

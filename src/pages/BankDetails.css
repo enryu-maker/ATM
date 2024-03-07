@@ -5,7 +5,7 @@ body{
 }
 input{
     background: transparent;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     border: none;
     
 }
