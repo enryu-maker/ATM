@@ -12,7 +12,7 @@ const MobileNum = () => {
   const handleSendOtp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/otp/send", {
+      const response = await axios.post("http://localhost:3001/otp/send", {
         mobileNumber: mobileNumber,
       });
 

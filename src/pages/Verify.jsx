@@ -22,7 +22,7 @@ const Verify = () => {
         return;
       }
   
-      const response = await axios.post("http://localhost:3000/withdraw/withdrawSend", {
+      const response = await axios.post("http://localhost:3001/withdraw/withdrawSend", {
         mobileNo: mobileNo,
         amount: amount,
         accountNumber: accountNumber
@@ -48,7 +48,7 @@ const Verify = () => {
     try {
       const enteredOtp = otpCode.join('');
 
-      const response = await axios.post("http://localhost:3000/withdraw/withdrawVerify", {
+      const response = await axios.post("http://localhost:3001/withdraw/withdrawVerify", {
         mobileNo: mobileNo,
         amount: amount,
         accountNumber: accountNumber,
@@ -72,7 +72,7 @@ const Verify = () => {
 
   const handleResendOtp = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/otp/resend", {
+      const response = await axios.post("http://localhost:3001/otp/resend", {
         mobileNo: mobileNo,
       });
 
