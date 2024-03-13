@@ -152,9 +152,9 @@ const Verify = () => {
 
   return (
     <>
-      <div className="flex items-end justify-around w-full h-full pb-32 bg-gradient-to-r from-red-700 to-red-500">
-        <form onSubmit={handleSendOtp} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[500px]">
-          <div className="mb-4">
+      <div  className=" flex items-end justify-around w-full h-full bg-gradient-to-r from-red-700 to-red-500 ">
+        <form  onSubmit={handleSendOtp} className=" bg-white shadow-md rounded px-8 pt-6 pb-4 mb-4 w-[500px]">
+          <div className="mb-4" >
             <label className="block text-gray-700 text-lg font-bold mb-4">
               Account Number
             </label>

@@ -29,16 +29,17 @@ const MobileNum = () => {
     }
   };
 
+  
+
   const handleVerify = async (e) => {
     e.preventDefault();
     try {
       const enteredOtp = otp.join('');
-      console.log('Verification data:', { mobileNumber, otp: enteredOtp });
+      console.log('Verification data:', { mobileNumber, otpCode: enteredOtp });
 
-      const response = await axios.post("http://localhost:3000/otp/verify", {
+      const response = await axios.post("http://localhost:3001/otp/verify", {
         mobileNumber: mobileNumber,
-        otp: enteredOtp,
-        
+        otpCode: enteredOtp, // Updated field name to match server expectations
       });
 
       console.log('Verification Response:', response);
@@ -56,9 +57,10 @@ const MobileNum = () => {
     }
   };
 
+
   const handleResendOtp = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/otp/resend", {
+      const response = await axios.post("http://localhost:3001/otp/resend", {
         mobileNumber: mobileNumber,
       });
 
