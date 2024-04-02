@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import bg from '../assets/icon/bg1.jpg'
 import axios from 'axios';
 
 const MobileNum = () => {
@@ -75,10 +76,14 @@ const MobileNum = () => {
       console.error('Error in resend:', error);
     }
   };
+  const img={
+    backgroundImage: `url(${bg})`,
+    backgroundSize:"cover",
+  }
 
   const OTP = () => {
     return (
-      <div className="absolute inset-0 flex min-h-screen flex-col justify-center overflow-hidden bg-[rgba(0,0,0,0.3)] py-12">
+      <div className="absolute inset-0 flex min-h-screen flex-col justify-center overflow-hidden bg-[rgba(0,0,0,0.3)] py-12" style={img}>
         <div className="relative inset-0 flex  justify-center items-center bg-white px-6 pt-10 pb-9 shadow-xl mx-auto w-full h-fit max-w-lg rounded-2xl">
           <div className="mx-auto flex w-full max-w-md flex-col space-y-16">
             <div className="flex flex-col items-center justify-center text-center space-y-2">
@@ -140,7 +145,7 @@ const MobileNum = () => {
 
   return (
     <>
-      <div className="flex items-end justify-around w-full h-full pb-32 bg-gradient-to-r from-red-700 to-red-500">
+      <div style={img} className="flex items-end justify-around w-full h-full pb-32 bg-gradient-to-r from-red-700 to-red-500">
         <form onSubmit={handleSendOtp} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[500px]">
           <div className="mb-4">
             <label className="block text-gray-700 text-lg font-bold mb-4">

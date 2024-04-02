@@ -1,14 +1,15 @@
 export const Bank =[
     {
-        bankname:'HDFC',
+        bankname:'UNION BANK OF INDIA',
+        accno:834016784,
+        path:'/statebank'
+    },
+    {
+        bankname:'STATE BANK OF INDIA',
         accno:834016784,
     },
     {
-        bankname:'Dena',
-        accno:834016784,
-    },
-    {
-        bankname:'Lena',
+        bankname:'BANK OF MAHARASHTRA',
         accno:834016784,
     },
 

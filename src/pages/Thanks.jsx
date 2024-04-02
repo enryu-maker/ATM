@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './BankDetails.css';
+import bg from '../assets/icon/thanks.jpg'
 import { useNavigate } from 'react-router-dom';
 
 const UserDetails = () => {
@@ -46,10 +47,16 @@ const UserDetails = () => {
     marginTop: '10px',
   };
 
-  return (
-    
+  const img ={
+    backgroundImage: `url(${bg})`,
+    backgroundSize:"cover",
+  }
 
-    <h1 style={{fontSize:'20px' , fontWeight:'800'}}>Thank You for Choosing Laxmi Cheat Fund</h1>
+  return (
+    <div style={{...img,height:"100vh",width:"100vw"}}>
+
+    <h1 style={{fontSize:'20px' , color:"white", fontWeight:'800',paddingTop:"50vh"}} className='flex justify-center '>Thank You for Choosing Laxmi Cheat Fund</h1>
+    </div>
   );
 };
 
